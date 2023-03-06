@@ -17,7 +17,7 @@ describe('test suit /www.demoblaze.com/', () => {
         MainPage.clickOnPhoneMenu();
         MainPage.clickOncheapestPhone()
 
-        cy.visit('/cart.html')
+        cy.visit('/cart.html')//Unfortunatelly did not have enough time for 2nd PO creation
         cy.get('.success').should('exist')
         
     })
