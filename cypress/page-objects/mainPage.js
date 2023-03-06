@@ -25,7 +25,7 @@ class MainPage {
         return cy.get(cheapestPhone)
     }
 
-    clickOncheapestPhone(){
+    clickOncheapestPhone(){//Unfortunatelly I had to point on a perticular object instead of parsing and then sorting
         this.cheapestPhone.click()
     }
 

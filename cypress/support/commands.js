@@ -26,15 +26,11 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('logIn', () =>{
-    // cy.fixture('example').then(function(testData){
-    //     this.testData = testData
-    //   })
     
     cy.get('#login2').click({force: true} );
     cy.get('#logInModal').should('be.visible')
     cy.wait(500)
     cy.get('#loginpassword').should('be.visible').type('4r4nd0mp4ssw0rd{enter}', { delay: 100 });
-    
     cy.get('[for="log-pass"]').should('have.text','Password:')
     cy.get('#loginusername').should('be.visible').type('automatedUser26@example.com{enter}', { delay: 1 });
    
